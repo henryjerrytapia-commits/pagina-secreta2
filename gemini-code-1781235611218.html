@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Sorpresa</title>
+    <style>
+        body { 
+            display: flex; 
+            flex-direction: column; 
+            align-items: center; 
+            justify-content: center; 
+            height: 100vh; 
+            background-color: #f0f0f0; 
+            font-family: sans-serif; 
+        }
+        img { 
+            max-width: 80%; 
+            border: 5px solid #333; 
+            cursor: pointer; 
+            transition: transform 0.2s;
+        }
+        img:hover { transform: scale(1.05); }
+    </style>
+</head>
+<body>
+
+    <h1>¡Presiona la imagen!</h1>
+    
+    <!-- Al hacer clic en la imagen, se ejecuta el mensaje -->
+    <img src="https://i.ibb.co/PvxYyq0/tiquitona-limona.png" 
+         alt="Imagen sorpresa" 
+         onclick="alert('¡Caíste!')">
+
+</body>
+</html>
